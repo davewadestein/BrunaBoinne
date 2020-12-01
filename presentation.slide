@@ -16,6 +16,10 @@ Me:
 
 - Who am I?
 
+* First Look at Go
+.play src/sieve.go /START OMIT/,/END OMIT/
+
+
 * History
 - Developed at Google (2009)
 - Robert Griesemer, Rob Pike, Ken Thompson
