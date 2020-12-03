@@ -893,7 +893,7 @@ while the identifier of the inner declaration is in scope, it denotes the entity
 
 .play -edit src/slice3.go /START OMIT/,/END OMIT/
 
-* What does slice our look like?
+* What does our slice look like?
 
 .image images/slice.png 600 900
 
@@ -960,7 +960,7 @@ while the identifier of the inner declaration is in scope, it denotes the entity
 
 * Exercise: Slices
 
-- there are two main ways to write a function that uses slices…either accept a slice as input and iterate through it, or have your function return a slice that it allocates from within the function
+- two ways to use slices in functions…either accept a slice as input and iterate through it, or have your function return a slice that it allocates from within the function
 
 1. write a function `minmaxavg` which accepts a float64 slice and returns four values: the minimum value in the slice, the maximum value in the slice, the average of all the values, and an indication of success (as we did previously)
 
@@ -971,12 +971,11 @@ while the identifier of the inner declaration is in scope, it denotes the entity
 - so `fib(6)` should return an int slice of size 6 containing 1, 1, 2, 3, 5, 8
 - in the event of an error, fib should return the nil slice
 
+3. write a function counter which accepts a slice of strings and returns a new slice of the strings which contains 3 or more e's (check out the `strings` package)
+
 * Variadic Functions
 - can be called with any number of arguments
 - e.g., `fmt.Println` is a variadic function 
-
-3. write a function counter which accepts a slice of strings and returns a new slice of the strings which contains 3 or more e's
-- check out the `strings` package
 
 .play -edit src/variadic.go /START OMIT/,/END OMIT/
 
@@ -1092,7 +1091,7 @@ while the identifier of the inner declaration is in scope, it denotes the entity
  }{
  	{"a A x", 'A', 2},
  	{"some_text=some_value", '=', 9},
- 	{"finster", "E", -1},
+ 	{"finster", 'E', -1},
  }
 
 * Methods

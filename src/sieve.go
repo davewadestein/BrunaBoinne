@@ -24,7 +24,6 @@ func main() {
 			numbers[multiple] = 0
 		}
 	}
-
 	for _, value := range numbers {
 		if value > 0 {
 			fmt.Println(value)
